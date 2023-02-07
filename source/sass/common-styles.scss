@@ -1,0 +1,41 @@
+body {
+  @font-face {
+    font-family: "PT Sans", sans-serif;
+    src: url("../fonts/ptsans.woff"), url("../fonts/ptsans.woff2");
+    font-style: normal;
+  }
+  // Bold
+  @font-face {
+    font-family: "PT Sans", sans-serif;
+    src: url("../fonts/ptsansbold.woff"), url("../fonts/ptsansbold.woff2");
+    font-style: normal;
+  }
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  min-width: 320px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.body {
+  margin: 0;
+  padding: 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+// Отмена стандартных стилей
+li {
+list-style-type: none;
+}
+a {
+  text-decoration: none;
+}

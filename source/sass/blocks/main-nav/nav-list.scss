@@ -1,0 +1,10 @@
+.nav-list {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+// Закрытое меню
+.nav-list--closed {
+  margin: 0;
+  display: none;
+}
