@@ -1,9 +1,11 @@
 .main-nav {
-  width: 100%;
+  max-width: 100%;
+  min-height: 56px;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 // links
 .main-nav__link {
@@ -13,5 +15,11 @@
 .main-nav__menu-button {
   width: 23px;
   height: 23px;
-  background: #000000;
+  display: flex;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }

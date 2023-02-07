@@ -11,7 +11,7 @@ body {
     font-style: normal;
   }
   font-family: "PT Sans Narrow", "Arial", sans-serif;
-  min-width: 320px;
+  max-width: 100%;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -38,4 +38,26 @@ list-style-type: none;
 }
 a {
   text-decoration: none;
+}
+// Заголовки, приведение к стандртным стилям 
+h2 {
+  display: block;
+  margin: 0;
+}
+h3 {
+  display: block;
+  margin: 0;
+}
+// Абзацы
+p {
+  display: block;
+  margin: 0;
+}
+// Обнуление стилей кнопок
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
