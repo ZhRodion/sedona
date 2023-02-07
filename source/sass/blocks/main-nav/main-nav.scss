@@ -6,11 +6,39 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  @media (min-width: $tablet) {
+    min-height: 56px;
+    justify-content: center;
+  }
 }
 // links
 .main-nav__link {
   color: #ffffff;
-  background-color: #81B3D2;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  @media (min-width: $tablet) {
+    min-width: 160px;
+    min-height: 56px;
+    color: #000000;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      color: #81B3D2;
+    }
+  }
+}
+
+// Активная ссылка
+.main-nav__link--current {
+  @media (min-width: $tablet) {
+    color: #766357;
+  }
 }
 .main-nav__menu-button {
   width: 23px;

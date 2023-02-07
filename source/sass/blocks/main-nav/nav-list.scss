@@ -7,8 +7,15 @@
 .nav-list--closed {
   margin: 0;
   display: none;
+  @media (min-width: $tablet) {
+    min-width: 100%;
+    margin: 0;
+    display: flex;
+    
+  }
 }
 .nav-list--opened {
+  @media (max-width: $mobile-only) {
   max-width: 100%;
   min-height: 223px;
   display: block;
@@ -19,12 +26,51 @@
   font-size: 18px;
   line-height: 1.44;
   text-transform: uppercase;
+  }
 }
 .nav-list__item {
   padding: 17px 0 12px 0;
   box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2);
+  flex-shrink: 1;
+  @media (min-width: $tablet) {
+    min-width: 160px;
+    min-height: 56px;
+    padding: 0;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: none;
+    text-transform: uppercase;
+  }
 }
-.nav-list__item:last-child {
+.nav-list__logo-link {
+  width: 185px;
+}
+.end:last-child {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
   mix-blend-mode: normal;
+  @media (min-width: $tablet) {
+    background: none;
+  }
+}
+.start {
+display: flex;
+flex-direction: column;
+@media (min-width: $tablet) {
+  flex-direction: row;
+}
+}
+
+.end {
+display: flex;
+flex-direction: column;
+@media (min-width: $tablet) {
+  flex-direction: row;
+}
 }

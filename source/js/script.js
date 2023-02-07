@@ -1,6 +1,6 @@
 let menuButton = document.querySelector('.main-nav__menu-button');
 let navList = document.querySelector('.nav-list');
-let burgButton = document.querySelector('.burger-button')
+let burgButton = document.querySelector('.burger-button');
 
 menuButton.addEventListener('click', function () {
   if (navList.classList.contains('nav-list--closed')) {
