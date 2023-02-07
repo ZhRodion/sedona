@@ -51,6 +51,8 @@
 }
 .nav-list__logo-link {
   width: 185px;
+  cursor: pointer;
+  z-index: 1;
 }
 .end:last-child {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);

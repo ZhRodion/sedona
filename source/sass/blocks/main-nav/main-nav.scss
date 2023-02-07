@@ -31,9 +31,12 @@
     &:hover {
       color: #81B3D2;
     }
+    &:active {
+      color: #000000;
+      opacity: 0.3;
+    }
   }
 }
-
 // Активная ссылка
 .main-nav__link--current {
   @media (min-width: $tablet) {
