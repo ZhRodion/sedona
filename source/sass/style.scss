@@ -1,9 +1,9 @@
+// Пременные
+@import "./variables.scss";
 // Глобальные стили
 @import "./common-styles.scss";
 // Шрифт
 @import "./fonts.scss";
-// Пременные
-@import "./variables.scss";
 // header
 @import "./blocks/header/main-header.scss";
 @import "./blocks/main-nav/main-nav.scss";
@@ -11,4 +11,11 @@
 @import "./blocks/main-nav/burger-button.scss";
 // hero 
 @import "./blocks/hero/hero.scss";
+// Приемущества 
+@import "./blocks/advantages-tiles/advantages-tiles.scss";
+@import "./blocks/advantages-list/advantages-list.scss";
+@import "./blocks/advantages-description/advantages-description.scss";
+@import "./blocks/advantages-numbered/advantages-numbered.scss";
+// Поиск отеля
+@import "./blocks/search-hotel/search-hotel.scss";
 // footer

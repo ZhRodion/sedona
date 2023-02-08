@@ -1,0 +1,35 @@
+.advantages-list {
+  max-width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.advantages-large {
+max-width: 100%;
+min-height: 211px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 17px;
+background-color: #81B3D2;
+@media (min-width: $tablet) {
+  width: 33.33%;
+  min-height: 256px;
+}
+}
+.reverse {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: end;
+  }
+}
+.high-width-transfer {
+  display: none;
+  @media (min-width: $tablet) {
+  display: block;
+  }
+}
+.advantages-list__subtitle {
+  width: 75%;
+}

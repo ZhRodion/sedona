@@ -3,11 +3,35 @@
   min-height: 389px;
   margin: 0;
   padding: 0 19px 0 19px;
-  background-image: url(../../../img/hero/back-mobile.jpg.jpg);
+  background-image: url(../../../img/hero/triangle.svg), url(../../../img/hero/back-mobile.jpg.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 100%, 100% 50%;
+  background-size: 100%, cover;
+  background-position: 50% 100%, 50% 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (min-width: $tablet) {
+    min-height: 518px;
+    background-image: url(../../../img/hero/triangle-tabl.svg), url('../../../img/hero/bg-hero-tablet.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%, cover;
+    background-position: 50% 100%, 50% 100%;
+  }
+  @media (min-width: $desktop) {
+    min-height: 518px;
+    background-image: url(../../../img/hero/triangle-deskt.svg), url('../../../img/hero/back-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%, cover;
+    background-position: 50% 100%, 50% 100%;
+  }
+}
+
+.hero__text {
+  @media (min-width: $tablet) {
+    width: 461px;
+    height: 350px;
+  }
+  @media (min-width: $desktop) {
+    width: 460px;
+  }
 }

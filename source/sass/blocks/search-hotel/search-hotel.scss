@@ -1,0 +1,24 @@
+.search-hotel {
+  max-width: 100%;
+  height: 100%;
+  padding: 38px 18px 0 18px;
+}
+.search-hotel-text {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.search-hotel__button {
+  max-width: 100%;
+  height: 100%;
+  padding: 16px 49px;
+  background-color: #81B3D2;
+  color: #ffffff;
+  @media (min-width: $tablet) {
+    margin: 40px 0 0 0;
+    padding: 16px 121px;
+  }
+  @media (min-width: $desktop) {
+    margin: 46px 0 0 0;
+  }
+}
