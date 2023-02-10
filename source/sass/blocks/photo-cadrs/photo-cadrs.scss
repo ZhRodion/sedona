@@ -65,7 +65,12 @@ text-align: start;
   }
 }
 // Лайки
+.photo-cards__count {
+  margin-top: 4px;
+}
 .like-counter {
+  width: 40%;
+  min-height: 80px;
   display: flex;
   gap: 9px;
   align-items: center;

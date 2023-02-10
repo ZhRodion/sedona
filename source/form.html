@@ -29,17 +29,17 @@
                 <a class="main-nav__link" href="./index.html">Главная</a>
               </li>
               <li class="nav-list__item">
-                <a
-                  class="main-nav__link main-nav__link--current"
-                  href="./catalog.html"
-                  >Фото и видео</a
-                >
+                <a class="main-nav__link" href="./catalog.html">Фото и видео</a>
               </li>
             </div>
             <a class="nav-list__logo-link" href="/"></a>
             <div class="end">
               <li class="nav-list__item">
-                <a class="main-nav__link" href="./form.html">Форма отзыва</a>
+                <a
+                  class="main-nav__link main-nav__link--current"
+                  href="./form.html"
+                  >Форма отзыва</a
+                >
               </li>
               <li class="nav-list__item">
                 <a class="main-nav__link" href="#">htmlacademy</a>
@@ -50,143 +50,96 @@
       </nav>
     </header>
     <!-- Основной блок -->
-    <main class="main-catalog">
+    <main class="main-form">
       <section class="main-block">
         <h1 class="visually-hidden">Седона</h1>
       </section>
-      <section class="galery">
-        <h2 class="galery__title">Фото и видео</h2>
-        <p class="galery__subtitle">
-          Не можете решиться на путешествие из-за курса? Фотографии помогут вам
-          забыть о политике и экономике.
+      <section class="feedback-form">
+        <h2 class="feedback-form__title">Оставьте свой отзыв</h2>
+        <p class="feedback-form__subtitle">
+          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+          посещенных вами достопримечательностях
         </p>
-        <ul class="photo-cadrs">
-          <li class="photo-cards__item">
-            <picture class="photo-cards__image">
-              <source
-                media="(min-width: 1200px)"
-                srcset="./img/gallery/desktop/1-desk.jpg"
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="./img/gallery/tablet/1-tabl.jpg"
-              />
-              <img src="./img/gallery/1-mob.jpg" alt="" />
-            </picture>
-            <div class="photo-description">
-              <div class="author">
-                <h3 class="photo-cards__title">неродные просторы</h3>
-                <p class="photo-cards__subtitle">Автор фото: Борис</p>
-              </div>
-              <div class="like-counter">
-                <img
-                  class="photo-cards__like"
-                  src="./img/like-icon.svg"
-                  alt=""
-                />
-                <span class="photo-cards__count">1350</span>
-              </div>
-            </div>
-          </li>
-          <div class="secondary-photos">
-            <li class="photo-cards__item">
-              <picture class="photo-cards__image">
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="./img/gallery/desktop/2-desk.jpg"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="./img/gallery/tablet/2-tabl.jpg"
-                />
-                <img src="./img/gallery/2-mob.jpg" alt="" />
-              </picture>
-              <div class="photo-description">
-                <div class="author">
-                  <h3 class="photo-cards__title">Местная растительность</h3>
-                  <p class="photo-cards__subtitle">Автор фото: Сергей</p>
-                </div>
-                <div class="like-counter">
-                  <img
-                    class="photo-cards__like"
-                    src="./img/like-icon.svg"
-                    alt=""
-                  />
-                  <span class="photo-cards__count">143</span>
-                </div>
-              </div>
-            </li>
-            <li class="photo-cards__item">
-              <picture class="photo-cards__image">
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="./img/gallery/desktop/3-desk.jpg"
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="./img/gallery/tablet/3-tabl..jpg"
-                />
-                <img src="./img/gallery/3-mob.png" alt="" />
-              </picture>
-              <div class="photo-description">
-                <div class="author">
-                  <h3 class="photo-cards__title">Дорога на север</h3>
-                  <p class="photo-cards__subtitle">Автор фото: Петр</p>
-                </div>
-                <div class="like-counter">
-                  <img
-                    class="photo-cards__like"
-                    src="./img/like-icon.svg"
-                    alt=""
-                  />
-                  <span class="photo-cards__count">96</span>
-                </div>
-              </div>
-            </li>
-            <li class="photo-cards__item">
-              <picture class="photo-cards__image">
-                <source
-                  media="(min-width: 1200px)"
-                  srcset="./img/gallery/desktop/4-desk.jpg"
-                />
-                <source
-                  media="(min-width: 767px)"
-                  srcset="./img/gallery/tablet/4-tabl..jpg"
-                />
-                <img src="./img/gallery/4-mob.jpg" alt="" />
-              </picture>
-              <div class="photo-description">
-                <div class="author">
-                  <h3 class="photo-cards__title">Мост дьявола</h3>
-                  <p class="photo-cards__subtitle">Автор фото: Антон</p>
-                </div>
-                <div class="like-counter">
-                  <img
-                    class="photo-cards__like"
-                    src="./img/like-icon.svg"
-                    alt=""
-                  />
-                  <span class="photo-cards__count">254</span>
-                </div>
-              </div>
-            </li>
+        <fieldset class="user-data">
+          <div class="name">
+            <b class="user-data__heading">Представьтесь:</b>
+            <label class="user-data__description">ИМЯ*:</label>
+            <input
+              class="user-data__field"
+              type="text"
+              placeholder="Пётр"
+              value=""
+              required
+            />
+            <label class="user-data__description">ФАМИЛИЯ*:</label>
+            <input
+              class="user-data__field"
+              type="text"
+              placeholder="Пустота"
+              value=""
+              required
+            />
+            <label class="user-data__description">Отчество:</label>
+            <input
+              class="user-data__field"
+              type="text"
+              placeholder="Викторович"
+              value=""
+              required
+            />
           </div>
-        </ul>
-      </section>
-      <section class="commercial">
-        <h2 class="commercial__title">Все еще сомневаетесь?</h2>
-        <p class="commercial__subtitle">
-          Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали
-          в очередной раз!
-        </p>
-        <iframe
-          src="https://www.youtube.com/embed/sbrroNzY6dI"
-          title="YouTube video player"
-          frameborder="0"
-          controls="0"
-          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen"
-          allowfullscreen
-        ></iframe>
+          <b class="user-data__heading">Контактная информация:</b>
+          <div class="contacts-data">
+            <label class="user-data__description">Контактный телефон*:</label>
+            <input
+              class="user-data__field"
+              type="tel"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              placeholder="Введите телефон"
+              value=""
+              required
+            />
+            <label class="user-data__description">Электронная почта*:</label>
+            <input
+              class="user-data__field"
+              type="email"
+              placeholder="Введите e-mail"
+              value=""
+              required
+            />
+          </div>
+          <b class="user-data__heading">Ваше Общее впечатление:</b>
+          <div class="emotions">
+            <input class="user-data__radio" type="radio" />
+            <label class="user-data__variants">Скорее положительное</label>
+            <input class="user-data__radio" type="radio" />
+            <label class="user-data__variants">Скорее отрицательное</label>
+            <input class="user-data__radio" type="radio" />
+            <label class="user-data__variants">Затрудняюсь ответить</label>
+          </div>
+          <b class="user-data__heading">посещенные достопримечательности:</b>
+          <div class="locations">
+            <input class="user-data__checkbox" type="checkbox" checked />
+            <label class="user-data__variants">Мост Дьявола</label>
+            <input class="user-data__checkbox" type="checkbox" checked />
+            <label class="user-data__variants">Гора-Колокол</label>
+            <input class="user-data__checkbox" type="checkbox" checked />
+            <label class="user-data__variants">Слайд-парк</label>
+            <input class="user-data__checkbox" type="checkbox" />
+            <label class="user-data__variants">Красные скалы</label>
+          </div>
+          <b class="user-data__heading">Опишите свои эмоции:</b>
+          <textarea
+            class="user-data__textarea"
+            type="text"
+            placeholder="Опишите подробно все свои восторги"
+            value=""
+          ></textarea>
+        </fieldset>
+        <button class="feedback-form__button" type="submit">
+          отправить отзыв
+        </button>
+        <p class="feedback-form__manual">* — обязательные поля</p>
       </section>
     </main>
     <!-- футер -->
