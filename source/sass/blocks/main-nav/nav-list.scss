@@ -48,6 +48,9 @@
     background-color: none;
     text-transform: uppercase;
   }
+  @media (min-width: $desktop) {
+    min-width: 240px;
+  }
 }
 .nav-list__logo-link {
   width: 185px;
