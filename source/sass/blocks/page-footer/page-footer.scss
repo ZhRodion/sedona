@@ -1,0 +1,39 @@
+.page-footer {
+  max-width: 100%;
+  min-height: 233px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  @media (min-width: $tablet) {
+    min-height: 120px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+  }
+}
+.page-footer__hashtag {
+  max-width: 100%;
+  height: 100%;
+  padding: 38px 0 0 0;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.23;
+  text-transform: uppercase;
+  color: #000000;
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
+}
+.page-footer__academy-logo {
+  width: 42px;
+  height: 53px;
+}
+.page-footer__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
