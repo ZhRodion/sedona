@@ -61,47 +61,124 @@
           забыть о политике и экономике.
         </p>
         <ul class="photo-cadrs">
-          <li class="photo-cars__item">
-            <img class="photo-cards__image" src="#" alt="" />
-            <h3 class="photo-cards__title"></h3>
-            <p class="photo-cards__subtitle"></p>
-            <div class="like-counter">
-              <img class="photo-cards__like" src="#" alt="" />
-              <span class="photo-cards__count"></span>
+          <li class="photo-cards__item">
+            <picture class="photo-cards__image">
+              <source
+                media="(min-width: 1200px)"
+                srcset="./img/gallery/desktop/1-desk.jpg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./img/gallery/tablet/1-tabl.jpg"
+              />
+              <img src="./img/gallery/1-mob.jpg" alt="" />
+            </picture>
+            <div class="photo-description">
+              <div class="author">
+                <h3 class="photo-cards__title">неродные просторы</h3>
+                <p class="photo-cards__subtitle">Автор фото: Борис</p>
+              </div>
+              <div class="like-counter">
+                <img
+                  class="photo-cards__like"
+                  src="./img/like-icon.svg"
+                  alt=""
+                />
+                <span class="photo-cards__count">1350</span>
+              </div>
             </div>
           </li>
-          <li class="photo-cars__item">
-            <img class="photo-cards__image" src="#" alt="" />
-            <h3 class="photo-cards__title"></h3>
-            <p class="photo-cards__subtitle"></p>
-            <div class="like-counter">
-              <img class="photo-cards__like" src="#" alt="" />
-              <span class="photo-cards__count"></span>
-            </div>
-          </li>
-          <li class="photo-cars__item">
-            <img class="photo-cards__image" src="#" alt="" />
-            <h3 class="photo-cards__title"></h3>
-            <p class="photo-cards__subtitle"></p>
-            <div class="like-counter">
-              <img class="photo-cards__like" src="#" alt="" />
-              <span class="photo-cards__count"></span>
-            </div>
-          </li>
-          <li class="photo-cars__item">
-            <img class="photo-cards__image" src="#" alt="" />
-            <h3 class="photo-cards__title"></h3>
-            <p class="photo-cards__subtitle"></p>
-            <div class="like-counter">
-              <img class="photo-cards__like" src="#" alt="" />
-              <span class="photo-cards__count"></span>
-            </div>
-          </li>
+          <div class="secondary-photos">
+            <li class="photo-cards__item">
+              <picture class="photo-cards__image">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./img/gallery/desktop/2-desk.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/gallery/tablet/2-tabl.jpg"
+                />
+                <img src="./img/gallery/2-mob.jpg" alt="" />
+              </picture>
+              <div class="photo-description">
+                <div class="author">
+                  <h3 class="photo-cards__title">Местная растительность</h3>
+                  <p class="photo-cards__subtitle">Автор фото: Сергей</p>
+                </div>
+                <div class="like-counter">
+                  <img
+                    class="photo-cards__like"
+                    src="./img/like-icon.svg"
+                    alt=""
+                  />
+                  <span class="photo-cards__count">143</span>
+                </div>
+              </div>
+            </li>
+            <li class="photo-cards__item">
+              <picture class="photo-cards__image">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./img/gallery/desktop/3-desk.jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/gallery/tablet/3-tabl..jpg"
+                />
+                <img src="./img/gallery/3-mob.png" alt="" />
+              </picture>
+              <div class="photo-description">
+                <div class="author">
+                  <h3 class="photo-cards__title">Дорога на север</h3>
+                  <p class="photo-cards__subtitle">Автор фото: Петр</p>
+                </div>
+                <div class="like-counter">
+                  <img
+                    class="photo-cards__like"
+                    src="./img/like-icon.svg"
+                    alt=""
+                  />
+                  <span class="photo-cards__count">96</span>
+                </div>
+              </div>
+            </li>
+            <li class="photo-cards__item">
+              <picture class="photo-cards__image">
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./img/gallery/desktop/4-desk.jpg"
+                />
+                <source
+                  media="(min-width: 767px)"
+                  srcset="./img/gallery/tablet/4-tabl..jpg"
+                />
+                <img src="./img/gallery/4-mob.jpg" alt="" />
+              </picture>
+              <div class="photo-description">
+                <div class="author">
+                  <h3 class="photo-cards__title">Мост дьявола</h3>
+                  <p class="photo-cards__subtitle">Автор фото: Антон</p>
+                </div>
+                <div class="like-counter">
+                  <img
+                    class="photo-cards__like"
+                    src="./img/like-icon.svg"
+                    alt=""
+                  />
+                  <span class="photo-cards__count">254</span>
+                </div>
+              </div>
+            </li>
+          </div>
         </ul>
       </section>
       <section class="commercial">
-        <h2></h2>
-        <p></p>
+        <h2 class="commercial__title">Все еще сомневаетесь?</h2>
+        <p class="commercial__subtitle">
+          Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали
+          в очередной раз!
+        </p>
         <iframe
           src="https://www.youtube.com/embed/sbrroNzY6dI"
           title="YouTube video player"
