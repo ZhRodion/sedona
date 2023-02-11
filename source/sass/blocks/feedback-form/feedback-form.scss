@@ -17,9 +17,38 @@
   padding: 0;
   background-color: #81B3D2;
   color: #FFFFFF;
+  @media (min-width: $tablet) {
+    margin: 0;
+    width: 50%;
+  }
+  @media (min-width: $desktop) {
+    width: 35%;
+  }
 }
 .feedback-form__manual {
   display: flex;
   justify-content: flex-end;
   color: rgba(51, 51, 51, 0.6);
+  @media (min-width: $tablet) {
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+  @media (min-width: $desktop) {
+    width: 40%;
+  }
 }
+  // Расположение кнопки и подсказки
+  .feedback-button-container {
+    @media (min-width: $tablet) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 48px 0 0 0;
+    }
+    @media (min-width: $desktop) {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+  }

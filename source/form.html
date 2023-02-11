@@ -42,7 +42,9 @@
                 >
               </li>
               <li class="nav-list__item">
-                <a class="main-nav__link" href="#">htmlacademy</a>
+                <a class="main-nav__link" href="https://htmlacademy.ru/study"
+                  >htmlacademy</a
+                >
               </li>
             </div>
           </ul>
@@ -60,86 +62,119 @@
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
           посещенных вами достопримечательностях
         </p>
+        <!-- Поля ввода -->
         <fieldset class="user-data">
-          <div class="name">
-            <b class="user-data__heading">Представьтесь:</b>
-            <label class="user-data__description">ИМЯ*:</label>
-            <input
-              class="user-data__field"
-              type="text"
-              placeholder="Пётр"
-              value=""
-              required
-            />
-            <label class="user-data__description">ФАМИЛИЯ*:</label>
-            <input
-              class="user-data__field"
-              type="text"
-              placeholder="Пустота"
-              value=""
-              required
-            />
-            <label class="user-data__description">Отчество:</label>
-            <input
-              class="user-data__field"
-              type="text"
-              placeholder="Викторович"
-              value=""
-              required
-            />
+          <!-- Контейнер для планшетной версии -->
+          <div class="main-user-data">
+            <div class="name">
+              <b class="user-data__heading">Представьтесь:</b>
+              <label class="user-data__description">ИМЯ*:</label>
+              <input
+                class="user-data__field"
+                type="text"
+                placeholder="Пётр"
+                value=""
+                required
+              />
+              <label class="user-data__description">ФАМИЛИЯ*:</label>
+              <input
+                class="user-data__field"
+                type="text"
+                placeholder="Пустота"
+                value=""
+                required
+              />
+              <label class="user-data__description">Отчество:</label>
+              <input
+                class="user-data__field"
+                type="text"
+                placeholder="Викторович"
+                value=""
+                required
+              />
+            </div>
+            <div class="line"></div>
+            <div class="contacts-data">
+              <b class="user-data__heading">Контактная информация:</b>
+              <label class="user-data__description">Контактный телефон*:</label>
+              <input
+                class="user-data__field"
+                type="tel"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                placeholder="Введите телефон"
+                value=""
+                required
+              />
+              <label class="user-data__description">Электронная почта*:</label>
+              <input
+                class="user-data__field"
+                type="email"
+                placeholder="Введите e-mail"
+                value=""
+                required
+              />
+            </div>
           </div>
-          <b class="user-data__heading">Контактная информация:</b>
-          <div class="contacts-data">
-            <label class="user-data__description">Контактный телефон*:</label>
-            <input
-              class="user-data__field"
-              type="tel"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              placeholder="Введите телефон"
-              value=""
-              required
-            />
-            <label class="user-data__description">Электронная почта*:</label>
-            <input
-              class="user-data__field"
-              type="email"
-              placeholder="Введите e-mail"
-              value=""
-              required
-            />
-          </div>
+          <!-- Радиокнопки -->
           <b class="user-data__heading">Ваше Общее впечатление:</b>
           <div class="emotions">
-            <input class="user-data__radio" type="radio" />
-            <label class="user-data__variants">Скорее положительное</label>
-            <input class="user-data__radio" type="radio" />
-            <label class="user-data__variants">Скорее отрицательное</label>
-            <input class="user-data__radio" type="radio" />
-            <label class="user-data__variants">Затрудняюсь ответить</label>
+            <label class="user-data__variants"
+              >Скорее положительное
+              <input class="user-data__radio" type="radio" name="id" checked />
+              <span class="user-data__custom-radio"></span>
+            </label>
+            <label class="user-data__variants"
+              >Скорее отрицательное
+              <input class="user-data__radio" type="radio" name="id" />
+              <span class="user-data__custom-radio"></span>
+            </label>
+            <label class="user-data__variants"
+              >Затрудняюсь ответить
+              <input class="user-data__radio" type="radio" name="id" />
+              <span class="user-data__custom-radio"></span>
+            </label>
           </div>
+          <!-- Чекбоксы -->
           <b class="user-data__heading">посещенные достопримечательности:</b>
           <div class="locations">
-            <input class="user-data__checkbox" type="checkbox" checked />
-            <label class="user-data__variants">Мост Дьявола</label>
-            <input class="user-data__checkbox" type="checkbox" checked />
-            <label class="user-data__variants">Гора-Колокол</label>
-            <input class="user-data__checkbox" type="checkbox" checked />
-            <label class="user-data__variants">Слайд-парк</label>
-            <input class="user-data__checkbox" type="checkbox" />
-            <label class="user-data__variants">Красные скалы</label>
+            <label class="user-data__variants"
+              >Мост Дьявола
+              <input class="user-data__checkbox" type="checkbox" checked />
+              <span class="user-data__custom-checkbox"></span
+            ></label>
+            <label class="user-data__variants"
+              >Гора-Колокол
+              <input class="user-data__checkbox" type="checkbox" checked />
+              <span class="user-data__custom-checkbox"></span
+            ></label>
+            <label class="user-data__variants"
+              >Слайд-парк
+              <input class="user-data__checkbox" type="checkbox" checked />
+              <span class="user-data__custom-checkbox"></span
+            ></label>
+            <label class="user-data__variants"
+              >Красные скалы
+              <input class="user-data__checkbox" type="checkbox" />
+              <span class="user-data__custom-checkbox"></span
+            ></label>
           </div>
-          <b class="user-data__heading">Опишите свои эмоции:</b>
-          <textarea
-            class="user-data__textarea"
-            type="text"
-            placeholder="Опишите подробно все свои восторги"
-            value=""
-          ></textarea>
+          <!-- Текстовое поле -->
+          <div class="text-field">
+            <b class="user-data__heading">Опишите свои эмоции:</b>
+            <textarea
+              class="user-data__textarea"
+              type="text"
+              placeholder="Опишите подробно все свои восторги"
+              value=""
+            ></textarea>
+          </div>
         </fieldset>
-        <button class="feedback-form__button" type="submit">
-          отправить отзыв
-        </button>
-        <p class="feedback-form__manual">* — обязательные поля</p>
+        <div class="feedback-button-container">
+          <button class="feedback-form__button" type="submit">
+            отправить отзыв
+          </button>
+          <p class="feedback-form__manual">* — обязательные поля</p>
+        </div>
       </section>
     </main>
     <!-- футер -->

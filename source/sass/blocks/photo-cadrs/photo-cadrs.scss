@@ -27,6 +27,9 @@
     padding: 0;
     gap: 0;
   }
+  @media (min-width: $desktop) {
+    position: relative;
+  }
 }
 
 .photo-cadrs picture img {
@@ -52,6 +55,12 @@ text-align: start;
   align-items: center;
   justify-content: space-between;
   background: #F2F2F2;
+}
+@media (min-width: $desktop) {
+  position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
 }
 }
 // Автор и название 
