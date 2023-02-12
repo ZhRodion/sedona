@@ -3,26 +3,38 @@
   min-height: 389px;
   margin: 0;
   padding: 0 19px 0 19px;
-  background-image: url(../../../img/hero/triangle.svg), url(../../../img/hero/back-mobile.jpg.jpg);
+  background-image: url('../../../img/triangle/mobile/triangle.svg'), url('../../../img/bg-hero/mobile/back-mobile.jpg');
   background-repeat: no-repeat;
   background-size: 100%, cover;
-  background-position: 50% 100%, 50% 100%;
+  background-position: 50% 101%,50% 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (min-resolution: 2dppx) {
+    background-image: url('../../../img/triangle/mobile/triangle.svg'), url('../../../img/bg-hero/mobile/back-mobile@2x.jpg');
+    background-size: 100%, cover;
+  }
   @media (min-width: $tablet) {
     min-height: 518px;
-    background-image: url(../../../img/hero/triangle-tabl.svg), url('../../../img/hero/bg-hero-tablet.jpg');
+    background-image: url('../../../img/triangle/tablet/triangle-tabl.svg'), url('../../../img/bg-hero/tablet/back-desktop.jpg');
     background-repeat: no-repeat;
     background-size: 100%, cover;
-    background-position: 50% 100%, 50% 100%;
+    background-position: 50% 101%,50% 100%;
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../../img/triangle/tablet/triangle-tabl.svg'), url('../../../img/bg-hero/tablet/back-desktop@2x.jpg');
+      background-size: 100%, cover;
+    }
   }
   @media (min-width: $desktop) {
     min-height: 518px;
-    background-image: url(../../../img/hero/triangle-deskt.svg), url('../../../img/hero/back-desktop.jpg');
+    background-image: url('../../../img/triangle/desktop/triangle-deskt.svg'), url('../../../img/bg-hero/desktop/back-desktop.jpg');
     background-repeat: no-repeat;
     background-size: 100%, cover;
-    background-position: 50% 100%, 50% 100%;
+    background-position: 50% 101%,50% 100%;
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../../img/triangle/desktop/triangle-deskt.svg'), url('../../../img/bg-hero/desktop/back-desktop@2x.png');
+      background-size: 100%, cover;
+    }
   }
 }
 

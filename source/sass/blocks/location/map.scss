@@ -2,18 +2,27 @@
   width: 100%;
   min-height: 350px;
   position: relative;
-  background-image: url('../../../img/bg-map/map-mobile.jpg');
+  background-image: url('../../../img/bg-map/mobile/map-mobile.jpg.jpg');
+  @media (min-resolution: 2dppx) {
+    background-image: url('../../../img/bg-map/mobile/map-mobile.jpg@2x.jpg');
+  }
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   @media (min-width: $tablet) {
-    background-image: url('../../../img/bg-map/map-tablet.jpg');
+    background-image: url('../../../img/bg-map/tablet/map-tablet.jpg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../../img/bg-map/tablet/map-mobile.jpg@2x.jpg');
+    }
   }
   @media (min-width: $desktop) {
-    background-image: url('../../../img/bg-map/map-desktop.jpg.jpg');
+    background-image: url('../../../img/bg-map/desktop/map-desktop.jpg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    @media (min-resolution: 2dppx) {
+      background-image: url('../../../img/bg-map/desktop/map-desktop.jpg@2x.jpg');
+    }
   }
 }

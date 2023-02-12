@@ -9,7 +9,7 @@
   <body class="page">
     <!-- шапка -->
     <header class="main-header">
-      <img class="main-header__logo" src="./img/logo-sed.svg" />
+      <img class="main-header__logo" src="./img/sed-logo.svg" />
       <!-- навигация и меню -->
       <nav class="main-nav">
         <button class="main-nav__menu-button">
@@ -53,6 +53,7 @@
     <main class="main-catalog">
       <section class="main-block">
         <h1 class="visually-hidden">Седона</h1>
+        <img class="main-block__sedona" src="./img/sedona.svg" alt="" />
       </section>
       <section class="galery">
         <h2 class="galery__title">Фото и видео</h2>
@@ -65,13 +66,23 @@
             <picture class="photo-cards__image">
               <source
                 media="(min-width: 1200px)"
-                srcset="./img/gallery/desktop/1-desk.jpg"
+                srcset="
+                  ./img/gallery/desktop/1.jpg,
+                  ./img/gallery/desktop/1@2x.jpg
+                "
               />
               <source
                 media="(min-width: 768px)"
-                srcset="./img/gallery/tablet/1-tabl.jpg"
+                srcset="
+                  ./img/gallery/tablet/1.jpg,
+                  ./img/gallery/tablet/1@2x.jpg
+                "
               />
-              <img src="./img/gallery/1-mob.jpg" alt="" />
+              <img
+                src="./img/gallery/mobile/1.jpg"
+                srcset="./img/gallery/mobile/1@2x.jpg"
+                alt=""
+              />
             </picture>
             <div class="photo-description">
               <div class="author">
@@ -99,13 +110,23 @@
               <picture class="photo-cards__image">
                 <source
                   media="(min-width: 1200px)"
-                  srcset="./img/gallery/desktop/2-desk.jpg"
+                  srcset="
+                    ./img/gallery/desktop/2.jpg,
+                    ./img/gallery/desktop/2@2x.jpg
+                  "
                 />
                 <source
                   media="(min-width: 768px)"
-                  srcset="./img/gallery/tablet/2-tabl.jpg"
+                  srcset="
+                    ./img/gallery/tablet/2.jpg,
+                    ./img/gallery/tablet/2@2x.jpg
+                  "
                 />
-                <img src="./img/gallery/2-mob.jpg" alt="" />
+                <img
+                  src="./img/gallery/mobile/2.jpg"
+                  srcset="./img/gallery/mobile/2@2x.jpg"
+                  alt=""
+                />
               </picture>
               <div class="photo-description">
                 <div class="author">
@@ -132,13 +153,23 @@
               <picture class="photo-cards__image">
                 <source
                   media="(min-width: 1200px)"
-                  srcset="./img/gallery/desktop/3-desk.jpg"
+                  srcset="
+                    ./img/gallery/desktop/3.jpg,
+                    ./img/gallery/desktop/3@2x.jpg
+                  "
                 />
                 <source
                   media="(min-width: 768px)"
-                  srcset="./img/gallery/tablet/3-tabl..jpg"
+                  srcset="
+                    ./img/gallery/tablet/3.jpg,
+                    ./img/gallery/tablet/3@2x.jpg
+                  "
                 />
-                <img src="./img/gallery/3-mob.png" alt="" />
+                <img
+                  src="./img/gallery/mobile/3.jpg"
+                  srcset="./img/gallery/mobile/3@2x.jpg"
+                  alt=""
+                />
               </picture>
               <div class="photo-description">
                 <div class="author">
@@ -165,13 +196,23 @@
               <picture class="photo-cards__image">
                 <source
                   media="(min-width: 1200px)"
-                  srcset="./img/gallery/desktop/4-desk.jpg"
+                  srcset="
+                    ./img/gallery/desktop/4.jpg,
+                    ./img/gallery/desktop/4@2x.jpg
+                  "
                 />
                 <source
                   media="(min-width: 767px)"
-                  srcset="./img/gallery/tablet/4-tabl..jpg"
+                  srcset="
+                    ./img/gallery/tablet/4.jpg,
+                    ./img/gallery/tablet/4@2x.jpg
+                  "
                 />
-                <img src="./img/gallery/4-mob.jpg" alt="" />
+                <img
+                  src="./img/gallery/mobile/4.jpg"
+                  srcset="./img/gallery/mobile/4@2x.jpg"
+                  alt=""
+                />
               </picture>
               <div class="photo-description">
                 <div class="author">
