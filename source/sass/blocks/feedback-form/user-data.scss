@@ -19,8 +19,11 @@ width: 100%;
 margin: 20px 0 0 0;
 display: grid;
 border-top: 1px solid #E5E5E5;
-border-bottom: 1px solid #E5E5E5;
 padding: 34px 0 34px 0;
+@media (min-width: $tablet) {
+  width: 100%;
+  border: 0;
+}
 }
 // Поле контакты
 .contacts-data {
@@ -30,30 +33,110 @@ padding: 34px 0 34px 0;
 display: grid;
 border-top: 1px solid #E5E5E5;
 border-bottom: 1px solid #E5E5E5;
+@media (min-width: $tablet) {
+  width: 100%;
+  align-items: start;
+  align-self: baseline;
+  border: 0;
 }
-// Эмоции 
+}
+// Радиокнопки 
 .emotions {
-width: 100%;
-margin: 20px 0 0 0;
-padding: 34px 0 34px 0;
-border-top: 1px solid #E5E5E5;
-border-bottom: 1px solid #E5E5E5;
-display: grid;
-grid-template-columns: 50px 1fr;
-row-gap: 16px;
-justify-items: start;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 16px;
+  @media (min-width: $tablet) {
+    width: 100%;
+    padding: 0 0 34px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: flex-start;
+    row-gap: 10px;
+    border-bottom: 1px solid #E5E5E5;
+    }
+    @media (min-width: $desktop) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
 }
-// Достопремичательности 
+.user-data__radio {
+  width: 46px;
+  order: -1;
+  display: flex;
+  appearance: none;
+  position: absolute;
+}
+.user-data__custom-radio {
+  width: 46px;
+  height: 46px;
+  order: -1;
+  border-radius: 50px;
+  display: flex;
+  position: relative;
+  background-color: #F2F2F2;
+}
+.user-data__radio:checked ~ .user-data__custom-radio {
+  background-image: url(../../../img/krug.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+// Чекбокс
 .locations {
   width: 100%;
-  margin: 20px 0 0 0;
-  padding: 34px 0 34px 0;
-  border-top: 1px solid #E5E5E5;
-border-bottom: 1px solid #E5E5E5;
   display: grid;
-  grid-template-columns: 50px 1fr;
+  grid-template-columns: 1fr;
   row-gap: 16px;
-  justify-items: start;
+  @media (min-width: $tablet) {
+  width: 100%;
+  padding: 0 0 34px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: flex-start;
+  row-gap: 10px;
+  margin: 0 auto;
+  border-bottom: 1px solid #E5E5E5;
+  }
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 64px;
+    margin: 0;
+    padding: 0 0 36px 0;
+  }
+}
+.user-data__variants {
+  width: 100%;
+  min-height: 46px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  gap: 16px;
+}
+.user-data__custom-checkbox {
+  border: 0;
+  border-radius: 4px;
+  width: 46px;
+  height: 46px;
+  order: -1;
+  display: flex;
+  position: relative;
+  background-color: #F2F2F2;
+}
+.user-data__checkbox {
+  width: 46px;
+  order: -1;
+  display: flex;
+  appearance: none;
+    position: absolute;
+}
+.user-data__checkbox:checked + .user-data__custom-checkbox {
+  background-image: url(../../../img/galca.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 // Лейблы инпутов
 .user-data__description {
@@ -85,43 +168,35 @@ border-bottom: 1px solid #E5E5E5;
     word-wrap: break-word;
     width: 80%;
   }
-
-// Тестовые стили радио 
-// input[type="radio"] {
-//   display: none;
-// }
-
-// input[type="radio"] + label {
-//   display: inline-block;
-//   margin: 0 10px 0 0;
-//   padding: 10px;
-//   background-color: lightgray;
-//   border-radius: 50%;
-//   position: relative;
-// }
-
-// input[type="radio"]:checked + label {
-//   background-color: green;
-// }
-
-// input[type="radio"] + label:before {
-//   content: "";
-//   display: block;
-//   width: 100%;
-//   height: 100%;
-//   border-radius: 50%;
-//   position: absolute;
-//   left: 0;
-//   top: 0;
-//   background-color: white;
-//   transition: all 0.3s;
-// }
-
-// input[type="radio"]:checked + label:before {
-//   width: 50%;
-//   height: 50%;
-//   left: 25%;
-//   top: 25%;
-// }
-
-// В этом примере радиокнопки сначала скрыты с помощью display: none;, а затем их внешний вид изменяется с помощью CSS. Оператор + в CSS используется для выбора элемента, который следует за указанным элементом.
+// Премещение input для планшета 
+.main-user-data {
+  @media (min-width: $tablet) {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 44px;
+  border-bottom: 1px solid #E5E5E5;
+  }
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1px 1fr;
+  }
+  }
+// текстовое поле
+.text-field {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: $desktop) {
+    padding: 0 120px;
+  }
+}
+// Линия между блоками main-user-data
+.line {
+  display: none;
+  @media (min-width: $desktop) {
+  display: block;
+  border: 1px solid #DBDBDB;
+  margin: 50px 0 0 0;
+  height: 80%;
+}
+}
