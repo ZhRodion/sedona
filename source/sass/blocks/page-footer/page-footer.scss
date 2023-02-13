@@ -27,6 +27,12 @@
   @media (min-width: $tablet) {
     padding: 0;
   }
+  &:hover {
+    color: #81B3D2;
+  }
+  &:active {
+    opacity: 0.3;
+  }
 }
 .page-footer__academy-logo {
   width: 42px;
@@ -36,4 +42,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #000000;
+  text-transform: uppercase;
+  gap: 15px;
+  @media (max-width: 767px) {
+    padding: 0 0 22px 0;
+  }
+  &:hover {
+    color: #81B3D2;
+    stroke: #81B3D2;
+  }
+  &:active {
+    color: #B3B3B3;
+    stroke: #B3B3B3;
+  }
+}
+.page-footer__text:hover path {
+  fill: #81B3D2;
+}
+.page-footer__text:active path {
+  fill: #B3B3B3;
 }

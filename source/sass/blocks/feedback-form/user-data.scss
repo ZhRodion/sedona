@@ -9,9 +9,21 @@
 }
 .user-data__heading {
   margin: 0 0 24px 0;
-}
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.44;
+    text-transform: uppercase;
+    @media (min-width: $tablet) {
+      font-size: 21px;
+      line-height: 1.23;
+    }
+      }
 .user-data__heading:not(:first-child) {
   margin: 24px 0 0 0;
+}
+// Отступ последнего
+.text-field .user-data__heading {
+  padding: 42px 0 0 0;
 }
 // Поле Имя 
 .name {
@@ -25,6 +37,12 @@ padding: 34px 0 34px 0;
   border: 0;
 }
 }
+// Плейсхолдер 
+.name .user-data__field::placeholder {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.44;
+}
 // Поле контакты
 .contacts-data {
 width: 100%;
@@ -33,6 +51,7 @@ padding: 34px 0 34px 0;
 display: grid;
 border-top: 1px solid #E5E5E5;
 border-bottom: 1px solid #E5E5E5;
+position: relative;
 @media (min-width: $tablet) {
   width: 100%;
   align-items: start;
@@ -40,21 +59,34 @@ border-bottom: 1px solid #E5E5E5;
   border: 0;
 }
 }
+// Иконки
+.contacts-data__image {
+  position: absolute;
+  width: 46px;
+}
+.phone-icon {
+  right: 0;
+  top: 37%;
+}
+.mail-icon {
+  right: 0;
+  top: 66%;
+}
 // Радиокнопки 
 .emotions {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 16px;
+  padding: 28px 0 0 0;
   @media (min-width: $tablet) {
     width: 100%;
-    padding: 0 0 34px 0;
+    padding: 28px 0 34px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-content: flex-start;
     row-gap: 10px;
-    border-bottom: 1px solid #E5E5E5;
     }
     @media (min-width: $desktop) {
       grid-template-columns: 1fr 1fr 1fr;
@@ -88,23 +120,23 @@ border-bottom: 1px solid #E5E5E5;
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 16px;
+  padding: 28px 0 0 0;
   @media (min-width: $tablet) {
   width: 100%;
-  padding: 0 0 34px 0;
+  padding: 28px 0 34px 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   justify-content: flex-start;
   row-gap: 10px;
   margin: 0 auto;
-  border-bottom: 1px solid #E5E5E5;
   }
   @media (min-width: $desktop) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 64px;
     margin: 0;
-    padding: 0 0 36px 0;
+    padding: 28px 0 36px 0;
   }
 }
 .user-data__variants {
@@ -115,6 +147,9 @@ border-bottom: 1px solid #E5E5E5;
   align-items: center;
   cursor: pointer;
   gap: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.44;
 }
 .user-data__custom-checkbox {
   border: 0;
@@ -142,6 +177,7 @@ border-bottom: 1px solid #E5E5E5;
 .user-data__description {
   display: grid;
   justify-items: start;
+  text-transform: uppercase;
   }
   // Сами поля ввода 
   .user-data__field {
@@ -149,6 +185,21 @@ border-bottom: 1px solid #E5E5E5;
     padding: 16px 0 16px 16px;
     border: 0;
     background-color: #F2F2F2;
+    &:hover {
+      background: #E5E5E5;
+    }
+    &:active {
+      background: #FFFFFF;
+    }
+    &:focus {
+      border: 4px solid #E5E5E5;
+    }
+  }
+  .user-data__field::placeholder {
+    font-size: 18px;
+    line-height: 1.44;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.3);
   }
   .user-data__field:not(:last-child) {
     margin: 0 0 16px 0;
@@ -167,6 +218,11 @@ border-bottom: 1px solid #E5E5E5;
   .user-data__textarea::placeholder {
     word-wrap: break-word;
     width: 80%;
+    font-family: 'PT Sans';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.44;
+    color: rgba(0, 0, 0, 0.3);
   }
 // Премещение input для планшета 
 .main-user-data {
@@ -176,7 +232,6 @@ border-bottom: 1px solid #E5E5E5;
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 44px;
-  border-bottom: 1px solid #E5E5E5;
   }
   @media (min-width: $desktop) {
     grid-template-columns: 1fr 1px 1fr;
@@ -199,4 +254,28 @@ border-bottom: 1px solid #E5E5E5;
   margin: 50px 0 0 0;
   height: 80%;
 }
+}
+// полосы
+.form-head-line {
+  position: relative;
+}
+.form-head-line:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5em;
+  border-top: 1px solid #DBDBDB;
+  z-index: -1;
+  width: 200px;
+}
+.form-head-line:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 0.5em;
+  border-bottom: 1px solid #DBDBDB;
+  z-index: -1;
+  width: 200px;
 }

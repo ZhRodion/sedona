@@ -9,12 +9,22 @@
   height: 100%;
   padding: 32px 0 0 0;
   margin: 0;
+  @media (min-width: $tablet) {
+    padding: 47px 0 0 0;
+  }
+  @media (min-width: $desktop) {
+    padding: 59px 0 0 0;
+  }
 }
 .advantages-tiles__subtitle {
-width: 100%;
+max-width: 100%;
 height: 100%;
-padding: 35px 0 0 0;
+padding: 35px 18px 0 18px;
 margin: 0 0 32px 0;
+text-transform: uppercase;
+font-size: 14px;
+line-height: 1.5;
+color: #333333;
 }
 // Один перенос
 .only-mobile {

@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   background-image: url('../../../img/triangle/mobile/triangle.svg'),url('../../../img/bg-hero/mobile/back-mobile.jpg');
-  background-position: 50% 101%,50% 100%;
+  background-position: 50% 100%,50% 100%;
   background-repeat: no-repeat;
   background-size: 100%, cover;
   @media (min-resolution: 2dppx) {
@@ -14,7 +14,7 @@
   @media (min-width: $tablet) {
     min-height: 318px;
     background-image: url('../../../img/triangle/tablet/triangle-tabl.svg'),url('../../../img/bg-hero/tablet/back-desktop.jpg');
-    background-position: 50% 101%,50% 100%;
+    background-position: 50% 100%,50% 100%;
     background-repeat: no-repeat;
     @media (min-resolution: 2dppx) {
       background-image: url('../../../img/triangle/tablet/triangle-tabl.svg'), url('../../../img/bg-hero/tablet/back-desktop@2x.jpg');
@@ -23,7 +23,7 @@
   @media (min-width: $desktop) {
     min-height: 418px;
     background-image: url('../../../img/triangle/desktop/triangle-deskt.svg'),url('../../../img/bg-hero/desktop/back-desktop.jpg');
-    background-position: 50% 101%,50% 100%;
+    background-position: 50% 100%,50% 100%;
     background-repeat: no-repeat;
     @media (min-resolution: 2dppx) {
       background-image: url('../../../img/triangle/desktop/triangle-deskt.svg'), url('../../../img/bg-hero/desktop/back-desktop@2x.png');

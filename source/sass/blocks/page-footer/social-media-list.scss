@@ -7,3 +7,14 @@
   justify-content: center;
   gap: 6px;
 }
+.social-media-list__link rect {
+  &:hover {
+    fill: #669EC0;
+  }
+  &:active {
+    fill: #5496BD;
+  }
+}
+.social-media-list__link:active path {
+  opacity: 0.3;
+}

@@ -1,23 +1,18 @@
 .advantages-numbered {
-  width: 100%;
-  min-height: 165px;
+  max-width: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
   gap: 17px;
   background: #eeeeee;
+  padding: 36px;
   @media (min-width: $tablet) {
-    min-height: 191px;
+    width: 33.33%;
     align-items: center;
     justify-content: center;
-    min-height: 256px;
-    padding: 0;
   }
-}
-.advantages-numbered:nth-child(1) {
-  padding: 24px 0 0 0;
-  @media (min-width: $tablet) {
-    padding: 0;
+  @media (min-width: $desktop) {
+    padding: 43px 43px 82px;
   }
 }
 // Контейнер 
@@ -27,7 +22,17 @@
   }
 }
 .advantages-numbered__title {
+  font-size: 18px;
+  line-height: 1.44;
+  text-transform: uppercase;
   @media (min-width: $tablet) {
     width: 70%;
+    font-size: 21px;
+      line-height: 1.23;
   }
+}
+.advantages-numbered__subtitle {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.5;
 }
