@@ -28,8 +28,9 @@
   font-size: 14px;
   line-height: 1.5;
   text-transform: uppercase;
+  word-break: break-word;
   @media (min-width: $tablet) {
-    min-width: 160px;
+    width: 160px;
     min-height: 56px;
     color: #000000;
     background-color: none;
