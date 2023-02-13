@@ -3,9 +3,16 @@
   height: 100%;
   padding: 0;
   margin: 67px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   @media (min-width: $tablet) {
     padding: 0;
   }
@@ -15,8 +22,13 @@
 }
 .photo-cards__item {
   max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 15px;
   padding: 24px 0 24px 0;
   border-bottom: 1px solid #E5E5E5;
@@ -47,18 +59,32 @@ text-transform: uppercase;
 // Текст к фото
 .photo-description {
 width: 100%;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-flex-direction: column;
-align-items: flex-start;
+-webkit-box-orient: vertical;
+-webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+-webkit-box-align: start;
+    -ms-flex-align: start;
+        align-items: flex-start;
 gap: 11px;
 text-align: start;
 @media (min-width: $tablet) {
   max-width: 100%;
   min-height: 60px;
   padding: 0;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: #F2F2F2;
 }
 @media (min-width: $desktop) {
@@ -81,9 +107,16 @@ text-align: start;
 .author {
   @media (min-width: $tablet) {
     width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     padding: 0 0 0 20px;
   }
 }
@@ -96,35 +129,33 @@ text-align: start;
 }
 .like-counter {
   width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 9px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 @media (min-width: $tablet) {
   min-height: 80px;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding: 0 20px 0 0;
 }
 }
-// Планшетная сетка
-// .photo-cards__item:nth-child(1) {
-//   width: 100%;
-// }
-// .secondary-photos:nth-child(1) {
-//   width: 100%;
-// }
-// .secondary-photos:nth-child(2) {
-//   width: 100%;
-// }
-// .secondary-photos:nth-child(3) {
-//   width: 100%;
-// }
 .secondary-photos {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-column-align: center;
+      justify-items: center;
  @media (min-width: $tablet) {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   width: 100%;
   margin: 0;
 }

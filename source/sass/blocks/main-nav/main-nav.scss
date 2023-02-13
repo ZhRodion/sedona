@@ -3,12 +3,20 @@
   min-height: 56px;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   @media (min-width: $tablet) {
     min-height: 56px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 // links
@@ -25,9 +33,15 @@
     min-height: 56px;
     color: #000000;
     background-color: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     &:hover {
       color: #81B3D2;
     }
@@ -46,6 +60,8 @@
 .main-nav__menu-button {
   width: 23px;
   height: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0;
   position: absolute;

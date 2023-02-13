@@ -1,14 +1,20 @@
 .main-block {
   max-width: 100%;
   min-height: 214px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-image: url('../../../img/triangle/mobile/triangle.svg'),url('../../../img/bg-hero/mobile/back-mobile.jpg');
   background-position: 50% 100%,50% 100%;
   background-repeat: no-repeat;
   background-size: 100%, cover;
-  @media (min-resolution: 2dppx) {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     background-image: url('../../../img/triangle/mobile/triangle.svg'), url('../../../img/bg-hero/mobile/back-mobile@2x.jpg');
   }
   @media (min-width: $tablet) {
@@ -16,7 +22,7 @@
     background-image: url('../../../img/triangle/tablet/triangle-tabl.svg'),url('../../../img/bg-hero/tablet/back-desktop.jpg');
     background-position: 50% 100%,50% 100%;
     background-repeat: no-repeat;
-    @media (min-resolution: 2dppx) {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
       background-image: url('../../../img/triangle/tablet/triangle-tabl.svg'), url('../../../img/bg-hero/tablet/back-desktop@2x.jpg');
     }
   }
@@ -25,7 +31,7 @@
     background-image: url('../../../img/triangle/desktop/triangle-deskt.svg'),url('../../../img/bg-hero/desktop/back-desktop.jpg');
     background-position: 50% 100%,50% 100%;
     background-repeat: no-repeat;
-    @media (min-resolution: 2dppx) {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
       background-image: url('../../../img/triangle/desktop/triangle-deskt.svg'), url('../../../img/bg-hero/desktop/back-desktop@2x.png');
     }
   }
